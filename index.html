@@ -3,94 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard IA - Início</title>
+  <title>Dashboard IA - Página Inicial</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    header {
-      background-color: #1e88e5;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 0;
-      margin: 1rem 0 0 0;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    label {
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-
-    input, textarea {
-      padding: 0.5rem;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      margin-top: 0.25rem;
-    }
-
-    button {
-      margin-top: 1rem;
-      padding: 0.75rem;
-      background-color: #1e88e5;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    button:hover {
-      background-color: #1565c0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #e0e0e0;
-      margin-top: 2rem;
-    }
-  </style>
 </head>
 <body>
   <header>
     <h1>Dashboard IA</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html" class="active">Início</a></li>
         <li><a href="home.html">Home</a></li>
         <li><a href="config.html">Configurações</a></li>
         <li><a href="perfil.html">Perfil</a></li>
@@ -99,21 +20,23 @@
   </header>
 
   <main>
-    <h2>Bem-vindo à Dashboard da IA</h2>
-    <p>Preencha o formulário abaixo para entrar em contato com a equipe.</p>
+    <section class="welcome">
+      <h2>Bem-vindo à Dashboard da IA</h2>
+      <p>Gerencie sua experiência digital com eficiência e inteligência.</p>
+    </section>
 
-    <form>
-      <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" required />
+    <section class="contact-form">
+      <h3>Fale Conosco</h3>
+      <form action="https://formspree.io/f/mldbwwbn" method="POST">
+        <label for="email">Seu email:</label>
+        <input type="email" name="email" id="email" required />
 
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" required />
+        <label for="message">Sua mensagem:</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
 
-      <label for="mensagem">Mensagem</label>
-      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
   </main>
 
   <footer>
