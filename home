@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard IA - Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Dashboard IA</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="config.html">Configurações</a></li>
+          <li><a href="perfil.html">Perfil</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Visão Geral</h2>
+      <p>Veja abaixo os destaques e recursos da plataforma.</p>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Status do Sistema</h3>
+        <p>Tudo funcionando normalmente.</p>
+      </div>
+      <div class="card">
+        <h3>Usuários Ativos</h3>
+        <p>128 acessos nas últimas 24h.</p>
+      </div>
+      <div class="card">
+        <h3>Mensagens</h3>
+        <p>3 novas mensagens não lidas.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Potência Digital · Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
